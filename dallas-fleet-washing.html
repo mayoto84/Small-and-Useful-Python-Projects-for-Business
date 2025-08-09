@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <title>Dallas Fleet Washing | Partner Plus Clean</title>
+  <meta name="description" content="Dallas commercial fleet washing—on-site cleaning for trucks, vans, trailers & buses. Route-friendly schedules, eco-conscious detergents, quality checks. Book online or call 844-472-0196." />
+
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="https://partnerplusclean.com/wp-content/uploads/2025/05/City-Cleaning-Hero-Area-Vector@2x-3.webp" imagesrcset="https://partnerplusclean.com/wp-content/uploads/2025/05/City-Cleaning-Hero-Area-Vector@2x-3.webp" imagesizes="100vw">
+
+  <style>
+    :root{
+      --ppc-brand:#116DF4; --ppc-navy:#011226; --ppc-ink:#0f1a2b; --ppc-muted:#5d677a;
+      --ppc-radius:28px; --ppc-shadow:0 10px 24px rgba(0,0,0,.12);
+      --maxw:1180px; --hdr:78px; --accent:#eaf2ff;
+    }
+    *{box-sizing:border-box}
+    img{max-width:100%;height:auto;display:block}
+    body{margin:0;background:#fff;font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ppc-ink);line-height:1.45}
+    a{color:var(--ppc-navy);text-decoration:none}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:clamp(18px,2.5vw,32px)}
+    h1,h2,h3{line-height:1.1;margin:0 0 .5rem;text-align:center}
+    h1{font-size:clamp(36px,5.2vw,64px);font-weight:900}
+    h2{font-size:clamp(22px,2.6vw,34px);font-weight:800}
+    h3{font-size:clamp(18px,2vw,22px);font-weight:700}
+    p{margin:.5rem 0 1rem;color:var(--ppc-muted);font-size:clamp(15px,1.2vw,18px);text-align:center}
+    .btn{display:inline-block;background:var(--ppc-navy);color:#fff;padding:12px 22px;border-radius:999px;font-weight:800;box-shadow:var(--ppc-shadow);transition:transform .12s ease,box-shadow .2s ease;white-space:nowrap}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 14px 30px rgba(0,0,0,.2)}
+    .btn-alt{background:var(--ppc-brand)}
+    .eyebrow{display:inline-block;font-weight:800;color:#3174ff;background:#e7efff;border-radius:999px;padding:6px 12px;font-size:12px;letter-spacing:.4px;text-transform:uppercase}
+    .grid{display:grid;gap:clamp(16px,2vw,26px)}
+    .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .card{background:#fff;border-radius:var(--ppc-radius);padding:clamp(16px,2vw,24px);box-shadow:var(--ppc-shadow)}
+
+    /* Header */
+    .site-header{height:var(--hdr);display:flex;align-items:center;background:#0b1424;color:#fff;position:sticky;top:0;z-index:100;padding-inline:clamp(12px,2vw,24px);transition:box-shadow .2s ease}
+    .site-header.scrolled{box-shadow:0 10px 24px rgba(0,0,0,.2)}
+    .site-header .inner{display:flex;align-items:center;justify-content:space-between;gap:clamp(18px,3vw,36px)}
+    .brand img{height:42px;width:auto;margin-right:clamp(12px,2vw,28px)}
+    .nav{display:flex;align-items:center;gap:22px}
+    .nav a{color:#e8eefc;font-weight:800;font-size:15px;padding:10px 8px}
+    .nav .cta{background:#116DF4;color:#fff;padding:10px 16px;border-radius:999px}
+    .phone-inline{color:#e8eefc;font-weight:800;white-space:nowrap}
+    .phone-inline a{color:#e8eefc}
+
+    /* Mobile hamburger */
+    .hamburger{display:none;width:42px;height:42px;border-radius:10px;border:1px solid rgba(255,255,255,.2);align-items:center;justify-content:center;background:transparent;color:#fff;cursor:pointer}
+    .hamburger span,.hamburger:before,.hamburger:after{content:"";display:block;width:20px;height:2px;background:#fff;margin:3px 0;border-radius:2px}
+    .mobile-menu{display:none;position:fixed;top:var(--hdr);left:0;right:0;background:#0b1424;color:#fff;z-index:150;box-shadow:0 14px 30px rgba(0,0,0,.35)}
+    .mobile-menu a{display:block;padding:14px 20px;color:#e8eefc;border-top:1px solid rgba(255,255,255,.06);font-weight:700}
+    .mobile-cta{display:flex;gap:10px;padding:14px 20px}
+    .mobile-cta .btn{flex:1;text-align:center}
+    .mobile-cta .phone-inline{flex:1;text-align:center}
+
+    /* Sticky mobile call/book bar */
+    .sticky-mobile{display:none;position:fixed;bottom:12px;left:12px;right:12px;z-index:200;gap:10px}
+    .sticky-mobile a{flex:1;text-align:center}
+
+    /* Hero */
+    .hero{position:relative;background:url('https://partnerplusclean.com/wp-content/uploads/2025/05/City-Cleaning-Hero-Area-Vector@2x-3.webp') bottom center/cover no-repeat;min-height:calc(100vh - var(--hdr));display:flex;align-items:center}
+    .hero-inner{display:grid;gap:36px;grid-template-columns:1.1fr .9fr;align-items:center;width:100%}
+    .overlay{background:rgba(255,255,255,.86);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-radius:22px;padding:clamp(18px,2.2vw,28px);box-shadow:var(--ppc-shadow)}
+    .frame{padding:clamp(6px,1vw,10px);border-radius:26px;background:transparent;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+    .frame img{border-radius:20px;aspect-ratio:4/3;object-fit:cover}
+
+    /* Footer */
+    .ppc-footer{background:#0f1a2b;color:#c8d1e1;margin-top:30px}
+    .ppc-footer a{color:#fff;opacity:.9}
+    .ppc-footer .grid{grid-template-columns:1.2fr 1fr 1fr}
+    .ppc-foot-bottom{border-top:1px solid #2a3650;margin-top:16px;padding-top:12px;font-size:13px;text-align:center}
+
+    @media (max-width:980px){
+      .nav{display:none}
+      .hamburger{display:flex}
+      .hero-inner{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+      .hero{min-height:auto;padding:26px 0 10px}
+      .overlay{background:rgba(255,255,255,.92)}
+      .sticky-mobile{display:flex}
+    }
+  </style>
+
+  <!-- JSON-LD: Local Dallas Service -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Partner Plus Clean",
+    "url":"https://partnerplusclean.com/fleet-washing/",
+    "image":"https://partnerplusclean.com/wp-content/uploads/2024/08/Asset-2.png",
+    "telephone":"+1-844-472-0196",
+    "address":{"@type":"PostalAddress","addressLocality":"Dallas","addressRegion":"TX","addressCountry":"US"},
+    "openingHours":"Mo-Su 09:00-17:00",
+    "areaServed":"Dallas, TX",
+    "sameAs":["https://maps.app.goo.gl/ESGukYgM5DY4BGst5?g_st=ipc"],
+    "makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Commercial Fleet Washing"}}]
+  }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="wrap inner">
+      <a class="brand" href="/">
+        <img src="https://partnerplusclean.com/wp-content/uploads/2024/08/Asset-2.png" alt="Partner Plus Clean (white logo)" width="160" height="42" decoding="async">
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/pressure-washing/">Pressure Washing</a>
+        <a href="/dumpster-dumpster-pad-cleaning/">Dumpster &amp; Pad Cleaning</a>
+        <a href="/fleet-washing/">Fleet Washing</a>
+        <a href="/window-cleaning/">Window Cleaning</a>
+        <a href="/service-areas/">Service Areas</a>
+        <span class="phone-inline"><a href="tel:+18444720196">844-472-0196</a></span>
+        <a class="cta" href="https://widget.zenbooker.com/book/partnerplusclean">Get Your Quote</a>
+      </nav>
+      <button class="hamburger" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu"><span></span></button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <a href="/pressure-washing/">Pressure Washing</a>
+      <a href="/dumpster-dumpster-pad-cleaning/">Dumpster &amp; Pad Cleaning</a>
+      <a href="/fleet-washing/">Fleet Washing</a>
+      <a href="/window-cleaning/">Window Cleaning</a>
+      <a href="/service-areas/">Service Areas</a>
+      <div class="mobile-cta">
+        <a class="btn btn-alt" href="https://widget.zenbooker.com/book/partnerplusclean">Book Now</a>
+        <div class="phone-inline"><a href="tel:+18444720196">Call 844-472-0196</a></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky mobile call/book -->
+  <div class="wrap sticky-mobile" aria-hidden="true">
+    <a class="btn btn-alt" href="https://widget.zenbooker.com/book/partnerplusclean">Book</a>
+    <a class="btn" href="tel:+18444720196">Call</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="overlay">
+        <span class="eyebrow">Dallas, TX</span>
+        <h1>Dallas Fleet Washing</h1>
+        <p>On-site washes for trucks, vans, trailers & buses. Route-friendly scheduling, eco-conscious detergents, water-control options where needed—and consistent quality checks.</p>
+        <div style="display:grid;justify-items:center;gap:10px;">
+          <a class="btn btn-alt" href="https://widget.zenbooker.com/book/partnerplusclean">Get Your Quote</a>
+          <div class="phone-inline"><a href="tel:+18444720196">or call 844-472-0196</a></div>
+        </div>
+      </div>
+      <div class="frame">
+        <picture>
+          <source srcset="https://partnerplusclean.com/wp-content/uploads/2025/08/Dallas-Pressure-Washsing.webp" type="image/webp">
+          <img src="https://partnerplusclean.com/wp-content/uploads/2025/08/Dallas-Pressure-Washsing.png" alt="Technician washing a commercial vehicle in Dallas" width="800" height="600" loading="eager" decoding="async">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE WASH -->
+  <section class="wrap">
+    <h2>Fleet Types We Wash</h2>
+    <div class="grid grid-3">
+      <div class="card"><h3>Box Trucks & Vans</h3><p>Road film, bugs & grime removed—logos stay crisp.</p></div>
+      <div class="card"><h3>Tractors & Trailers</h3><p>Exterior wash, wheels, frames & landing gear.</p></div>
+      <div class="card"><h3>Buses & Shuttles</h3><p>Windows, body panels & steps—rider-ready shine.</p></div>
+    </div>
+  </section>
+
+  <!-- WHY DALLAS CHOOSES PPC -->
+  <section class="wrap">
+    <h2>Why Dallas Fleets Choose Us</h2>
+    <div class="grid grid-3">
+      <div class="card"><h3>Route-Friendly Scheduling</h3><p>Early AM, after-hours or weekends—work around dispatch.</p></div>
+      <div class="card"><h3>Eco-Conscious Options</h3><p>Safer detergents & water-control options where required.</p></div>
+      <div class="card"><h3>Consistent Quality</h3><p>Documented process, trained techs & post-wash checks.</p></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="wrap" style="background:var(--accent);border-radius:24px;">
+    <h2>Ready to Schedule in Dallas?</h2>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a class="btn btn-alt" href="https://widget.zenbooker.com/book/partnerplusclean">Book Online</a>
+      <a class="btn" href="tel:+18444720196">Call 844-472-0196</a>
+    </div>
+  </section>
+
+  <!-- LOCAL BLOCK -->
+  <section class="wrap">
+    <h2>Serving Dallas & Nearby</h2>
+    <p>Downtown, Uptown, Design District, Oak Lawn, West Dallas, Trinity Groves, Addison, Irving/Las Colinas, Richardson, Carrollton, Garland, Mesquite & Grand Prairie.</p>
+    <p><a class="btn btn-alt" href="https://maps.app.goo.gl/ESGukYgM5DY4BGst5?g_st=ipc" target="_blank" rel="noopener">View on Google Maps</a></p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="wrap">
+    <h2>Dallas Fleet Washing FAQs</h2>
+    <details><summary>Do you offer after-hours service?</summary><p>Yes—overnight or early morning slots keep your fleet available.</p></details>
+    <details><summary>Can you provide COIs for Dallas facilities?</summary><p>Yes—certificates of insurance available upon request.</p></details>
+    <details><summary>Do you offer water recovery?</summary><p>We can accommodate local requirements with water-control options where needed.</p></details>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="ppc-footer" role="contentinfo">
+    <div class="wrap">
+      <div class="grid" style="display:grid;gap:18px;grid-template-columns:1.2fr 1fr 1fr">
+        <div>
+          <h3>Partner Plus Clean</h3>
+          <p>Dallas exterior cleaning—pressure washing, dumpster & pad cleaning, fleet washing & window cleaning.</p>
+          <p><a href="https://maps.app.goo.gl/ESGukYgM5DY4BGst5?g_st=ipc" target="_blank" rel="noopener">Find us on Google Maps</a></p>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <p><a href="/pressure-washing/">Pressure Washing</a></p>
+          <p><a href="/dumpster-dumpster-pad-cleaning/">Dumpster &amp; Pad Cleaning</a></p>
+          <p><a href="/fleet-washing/">Fleet Washing</a></p>
+          <p><a href="/window-cleaning/">Window Cleaning</a></p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p><a class="btn btn-alt" href="https://widget.zenbooker.com/book/partnerplusclean">Book Online</a></p>
+          <p><b>Phone:</b> <a href="tel:+18444720196">844-472-0196</a></p>
+          <p><b>Hours:</b> M – Su 9a – 5p</p>
+          <p><b>Location:</b> Dallas, TX</p>
+        </div>
+      </div>
+      <div class="ppc-foot-bottom">© Partner Plus Clean — Dallas Fleet Washing</div>
+    </div>
+  </footer>
+
+  <script>
+    const header=document.querySelector('.site-header');window.addEventListener('scroll',()=>{header.classList.toggle('scrolled',window.scrollY>8)});
+    const btn=document.querySelector('.hamburger');const menu=document.getElementById('mobile-menu');
+    if(btn&&menu){btn.addEventListener('click',()=>{const open=!menu.hasAttribute('hidden');if(open){menu.setAttribute('hidden','');menu.style.display='none';btn.setAttribute('aria-expanded','false')}else{menu.removeAttribute('hidden');menu.style.display='block';btn.setAttribute('aria-expanded','true')}})}
+  </script>
+</body>
+</html>
