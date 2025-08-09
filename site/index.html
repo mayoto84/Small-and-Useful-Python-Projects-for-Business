@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media Tools Suite</title>
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="./index.html">Media Tools Suite</a></h1>
+      <nav class="site-nav">
+        <a href="./index.html" class="active">Home</a>
+        <a href="./tools/jpg-to-ico.html">JPG → ICO</a>
+        <a href="./tools/image-converter.html">Image Converter</a>
+        <a href="./tools/image-size-reducer.html">Image Size Reducer</a>
+        <a href="./tools/mp4-to-wav.html">MP4 → WAV</a>
+        <a href="./tools/video-size-reducer.html">Video Size Reducer</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Utilities for images, audio and video</h2>
+      <p>Simple desktop tools (Windows executables) and Python scripts for common media tasks. Browse a tool below to read details and download.</p>
+    </section>
+
+    <section class="card-grid">
+      <a class="card" href="./tools/jpg-to-ico.html">
+        <h3>JPG → ICO</h3>
+        <p>Convert a JPG image to a multi-size Windows icon (.ico).</p>
+      </a>
+      <a class="card" href="./tools/image-converter.html">
+        <h3>Image Converter</h3>
+        <p>Convert images between formats (JPG, PNG, GIF, BMP, ICO, TIFF).</p>
+      </a>
+      <a class="card" href="./tools/image-size-reducer.html">
+        <h3>Image Size Reducer</h3>
+        <p>Batch-resize images to a percentage of their original dimensions.</p>
+      </a>
+      <a class="card" href="./tools/mp4-to-wav.html">
+        <h3>MP4 → WAV</h3>
+        <p>Extract audio from an MP4 video and save as WAV.</p>
+      </a>
+      <a class="card" href="./tools/video-size-reducer.html">
+        <h3>Video Size Reducer</h3>
+        <p>Reduce video size using trimming or scaling (see notes).</p>
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Media Tools Suite</p>
+    </div>
+  </footer>
+
+  <script src="./assets/script.js"></script>
+</body>
+</html>
