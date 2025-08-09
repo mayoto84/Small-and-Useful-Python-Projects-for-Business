@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MP4 to WAV | Media Tools Suite</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="../index.html">Media Tools Suite</a></h1>
+      <nav class="site-nav">
+        <a href="../index.html">Home</a>
+        <a href="./jpg-to-ico.html">JPG → ICO</a>
+        <a href="./image-converter.html">Image Converter</a>
+        <a href="./image-size-reducer.html">Image Size Reducer</a>
+        <a href="./mp4-to-wav.html" class="active">MP4 → WAV</a>
+        <a href="./video-size-reducer.html">Video Size Reducer</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container tool-page">
+    <h2>MP4 → WAV</h2>
+    <div class="tool-meta">Extract the audio track from an MP4 video and save as WAV.</div>
+
+    <div class="actions">
+      <a class="button secondary" href="../downloads/MP4%20to%20WAV.py">View Python Source</a>
+    </div>
+
+    <div class="note">
+      Requires Python with <code>moviepy</code>, <code>pydub</code> and an <code>ffmpeg</code> installation.
+    </div>
+
+    <h3>How to use</h3>
+    <ul>
+      <li>Launch the app, click <em>Browse Video File</em>, choose an MP4.</li>
+      <li>Click <em>Convert!</em> to export a WAV next to the input video.</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Media Tools Suite</p>
+    </div>
+  </footer>
+
+  <script src="../assets/script.js"></script>
+</body>
+</html>

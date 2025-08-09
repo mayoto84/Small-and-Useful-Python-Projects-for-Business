@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Size Reducer | Media Tools Suite</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="../index.html">Media Tools Suite</a></h1>
+      <nav class="site-nav">
+        <a href="../index.html">Home</a>
+        <a href="./jpg-to-ico.html">JPG → ICO</a>
+        <a href="./image-converter.html">Image Converter</a>
+        <a href="./image-size-reducer.html">Image Size Reducer</a>
+        <a href="./mp4-to-wav.html">MP4 → WAV</a>
+        <a href="./video-size-reducer.html" class="active">Video Size Reducer</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container tool-page">
+    <h2>Video Size Reducer</h2>
+    <div class="tool-meta">Reduce the size of videos in a folder.</div>
+
+    <div class="actions">
+      <a class="button secondary" href="../downloads/Video%20Size%20Reducer.py">View Python Source</a>
+    </div>
+
+    <div class="note">
+      Current implementation trims duration based on the chosen percentage. For actual file size reduction, scale resolution and set bitrate in code.
+    </div>
+
+    <h3>How to use</h3>
+    <ul>
+      <li>Click <em>Browse Input Folder</em> to select a directory containing videos.</li>
+      <li>Enter a percentage and click <em>Reduce Videos</em>. Output is written to <code>resized_videos</code>.</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Media Tools Suite</p>
+    </div>
+  </footer>
+
+  <script src="../assets/script.js"></script>
+</body>
+</html>
